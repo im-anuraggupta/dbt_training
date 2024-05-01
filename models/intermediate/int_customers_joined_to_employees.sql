@@ -37,7 +37,7 @@ joined as (
         employees.supervisor_employee_id
     from customers
     left join employees
-        on customers.customer_id = employees.employee_id
+        on customers.representative_employee_id = employees.employee_id
 )
 
 select * from joined
